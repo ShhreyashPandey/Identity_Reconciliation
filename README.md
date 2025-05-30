@@ -1,9 +1,9 @@
 # Identity Reconciliation
 The goal is to identify and unify customer identities using multiple email and phone entries that may belong to the same person, based on common fields.
----
 
 ## Problem Statement
 A customer may place multiple orders on FluxKart using different contact details. This system helps unify such data by detecting links via email or phone and resolving to a primary contact, with others marked as secondary.
+
 The backend exposes a `/identify` endpoint that receives a JSON body with `email` and/or `phoneNumber`, and returns a normalized contact response.
 ---
 
@@ -25,15 +25,19 @@ node app.js
 
 ### .env Setup
 Make sure to create a .env file with your MySQL credentials:
+
 MYSQL_HOST=localhost
+
 MYSQL_USER=root
+
 MYSQL_PASSWORD=your_password
+
 MYSQL_DATABASE=reconciliation(or whatever you name)
 
 ### How to Run
 ```bash
-git clone https://github.com/your-username/identity-reconciliation.git
-cd identity-reconciliation
+git clone https://github.com/ShhreyashPandey/Identity_Reconciliation.git
+cd Identity_Reconciliation
 npm install
 node app.js
 ```

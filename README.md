@@ -5,12 +5,16 @@ The goal is to identify and unify customer identities using multiple email and p
 A customer may place multiple orders on FluxKart using different contact details. This system helps unify such data by detecting links via email or phone and resolving to a primary contact, with others marked as secondary.
 
 The backend exposes a `/identify` endpoint that receives a JSON body with `email` and/or `phoneNumber`, and returns a normalized contact response.
+
 ---
 
+
 ## Tech Stack
+
 - **Node.js** + **Express**
 - **MySQL** (via `mysql2`)
 - **dotenv** for environment configuration
+
 ---
 
 ## My Local Workflow
